@@ -12,6 +12,7 @@
 #include <cmath>
 #include <algorithm>
 #include <assert.h>
+#include <ranges>
 
 // C++ is somewhat obnoxious here:  You can't do a circular
 // reference, so we declare all the classes we will use all up here

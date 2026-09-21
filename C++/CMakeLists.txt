@@ -12,6 +12,7 @@ set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g \
 -Wall -Wformat -Wformat=2 -Wconversion -Wimplicit-fallthrough \
 -Werror=format-security \
 -D_GLIBCXX_ASSERTIONS \
+-fconcepts-diagnostics-depth=10 \
 -fopenmp")
 
 set (CMAKE_CXX_STANDARD_REQUIRED ON)

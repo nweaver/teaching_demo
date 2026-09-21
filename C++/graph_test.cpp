@@ -2,6 +2,7 @@
 
 #include "graph.hpp"
 #include <random>
+#include <ranges>
 
 TEST(GraphTest, BasicTest)
 {
@@ -66,6 +67,11 @@ TEST(GraphTest, BasicTest)
             i++;
         }
         ASSERT_TRUE(i == size);
+
+        // And here is a test using it as part of a view:  Well, once I get
+        // it working that is....
+        //        for (auto step : dijkstra_traversal<int>(g, 0) | std::views::take(5)) {
+        //        }
 
         // Now lets create a bunch of additional links that we know
         // will never be part of the traversal because they are too large.
